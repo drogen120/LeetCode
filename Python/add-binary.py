@@ -19,7 +19,7 @@ class Solution:
             val = carry
             if i < len(a):
                 val += int(a[-(i + 1)])
-            if i < len(b): 
+            if i < len(b):
                 val += int(b[-(i + 1)])
             carry, val = val / 2, val % 2
             result += str(val)
@@ -30,3 +30,4 @@ class Solution:
 if __name__ == '__main__':
     result = Solution().addBinary('11', '1')
     print result
+    print "Test"
